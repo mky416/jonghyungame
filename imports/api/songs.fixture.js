@@ -263,7 +263,7 @@ const data = load(`
   
 - songId: '4Les0OrRuZ0'
   title: '아재개그'
-  artist: '마무무'
+  artist: '마무'
   time: '0:13' 
 `);
 

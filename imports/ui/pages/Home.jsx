@@ -17,10 +17,12 @@ export default class Home extends React.Component {
         return (
             <div>
                 <center style={styles.hero}>
-                <img src="/images/jonghyungame.png"/>
+                    <img src="/images/jonghyungame.png"/>
                 </center>
                 <center>
-                <img src="/images/ranking.png" />
+                <Link to='/ranking'>
+                    <img src="/images/ranking.png" />
+                </Link>
                 <Link to='/play'>
                     <img src="/images/play.png" style={styles.play}/>
                 </Link>
