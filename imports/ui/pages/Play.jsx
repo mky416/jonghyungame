@@ -2,10 +2,10 @@ import React from 'react';
 
 const styles ={
     white: {
-        maxWidth: '600px', position:'absolute',
+        maxWidth: '720px', position:'absolute',
     },
     disc: {
-        maxWidth: '200px', position: 'relative', left: '200px', top: '25px'
+        maxWidth: '200px', position: 'relative', left: '260px', top: '50px',
     }
 }
 
