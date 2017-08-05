@@ -8,7 +8,7 @@ const styles ={
         marginBottom: '50px',
     },
     play: {
-        paddingLeft: '20px',
+        marginLeft: '20px',
     }
 }
 
@@ -17,7 +17,7 @@ export default class Home extends React.Component {
         return (
             <div>
                 <center style={styles.hero}>
-                    <img src="/images/jonghyungame.png"/>
+                    <img src="/images/jonghyuneegame.png"/>
                 </center>
                 <center>
                 <Link to='/ranking'>
