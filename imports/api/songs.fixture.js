@@ -392,6 +392,7 @@ const data = load(`
   genre: '랩/힙합'
   release: '2016'
   time: '0:56'
+  number: '1'
 `);
 
 
