@@ -371,6 +371,27 @@ const data = load(`
   genre: '댄스'
   release: '2017'
   time: '0:13' 
+  
+- songId: 'Y9XXGztRM4Y'
+  title: '여왕의 기사'
+  artist: '뉴이스트'
+  genre: '댄스'
+  release: '2017'
+  time: '0:28'
+
+- songId: 'YT3Zz1iIzOI'
+  title: '있잖아'
+  artist: '폴킴'
+  genre: '드라마'
+  release: '2017'
+  time: '0:13'
+
+- songId: 'hmE9f-TEutc'
+  title: '피 땀 눈물'
+  artist: '방탄소년단'
+  genre: '랩/힙합'
+  release: '2016'
+  time: '0:56'
 `);
 
 
