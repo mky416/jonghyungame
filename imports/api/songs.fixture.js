@@ -163,7 +163,7 @@ const data = load(`
   time: '0:04'
   
 - songId: 'EHgeGRU3wDI'
-  title: 'WHY DON'T YOU KNOW'
+  title: "WHY DON'T YOU KNOW"
   artist: '청하'
   genre: '댄스'
   release: '2017'
