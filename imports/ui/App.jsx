@@ -62,24 +62,21 @@ class App extends Component {
           task={task}
           showPrivateButton={showPrivateButton}
         />
-        
-        
       );
     });
   }
  
   render() {
     return (
-      <div className="container">          
-        <BrowserRouter>
+      <div>      
+          <BrowserRouter>
             <div style={styles.container}>
+                <AccountsUIWrapper />
                 <Route exact path='/play' component={Play} />
                 <Route exact path='/ranking' component={Ranking} />
                 <Route exact path='/' component={Home} />
             </div>
         </BrowserRouter>
-          
-        <AccountsUIWrapper />
       </div>
     );
   }
