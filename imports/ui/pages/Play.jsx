@@ -10,6 +10,9 @@ const styles ={
     disc: {
         maxWidth: '200px', position: 'relative', left: '260px', top: '50px',
     },
+    enter: {
+        maxWidth: '130px', position: 'relative', left: '295px', top: '150px',
+    },
     youtubeHidingContainer: {
         height: 0,
         width: 0,
@@ -24,7 +27,7 @@ export default class Play extends React.Component {
         return (
             <div>
                 <img src="/images/play22.png" style={styles.white} />
-                <img src="/images/compact-disc.png" style={styles.disc}/>    
+                <img src="/images/compact-disc.png" style={styles.disc} />    
                 <div style={styles.youtubeHidingContainer}>
                     <YouTube 
                         videoId={'afxLaQiLu-o'}
@@ -39,6 +42,7 @@ export default class Play extends React.Component {
                         }}
                     />
                 </div>
+                <img src="/images/enter.png" style={styles.enter} />  
             </div>
         );
 
