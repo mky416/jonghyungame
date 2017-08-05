@@ -10,6 +10,9 @@ const styles ={
     disc: {
         maxWidth: '200px', position: 'relative', left: '260px', top: '50px',
     },
+    enter: {
+        maxWidth: '130px', position: 'relative', left: '295px', top: '150px',
+    },
     youtubeHidingContainer: {
         height: 0,
         width: 0,
@@ -34,7 +37,6 @@ export default class Play extends React.Component {
     render() {
         return (
             <div>
-                <h1>{fixData.data}</h1>
                 <img src="/images/play22.png" style={styles.white} />
                 <a href="" onClick={this.myFunction}>
                 
@@ -53,7 +55,8 @@ export default class Play extends React.Component {
                             }}
                         />
                     </div>
-                </a> 
+                </a>
+                <img src="/images/enter.png" style={styles.enter} />
             </div>
         );
     }
