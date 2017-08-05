@@ -9,6 +9,7 @@ import { Tasks } from '../api/tasks.js';
 import Home from './pages/Home';
 import Play from './pages/Play';
 import Ranking from './pages/Ranking';
+import Modal from './pages/Modal';
 
 import Task from './Task.jsx';
 import AccountsUIWrapper from './AccountsUIWrapper.jsx';
@@ -23,11 +24,11 @@ const styles = {
 class App extends Component {
     constructor(props) {
     super(props);
- 
-    this.state = {
-      hideCompleted: false,
+     this.state = {
+       hideCompleted: false,
     };
   }
+    
     
     handleSubmit(event) {
     event.preventDefault();
@@ -75,6 +76,7 @@ class App extends Component {
                 <Route exact path='/play' component={Play} />
                 <Route exact path='/ranking' component={Ranking} />
                 <Route exact path='/' component={Home} />
+                
             </div>
         </BrowserRouter>
       </div>

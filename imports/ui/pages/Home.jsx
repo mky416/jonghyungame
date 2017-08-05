@@ -17,7 +17,7 @@ export default class Home extends React.Component {
         return (
             <div>
                 <center style={styles.hero}>
-                    <img src="/images/jonghyuneegame.png"/>
+                   <img src="/images/jonghyuneegame.png"/> 
                 </center>
                 <center>
                 <Link to='/ranking'>

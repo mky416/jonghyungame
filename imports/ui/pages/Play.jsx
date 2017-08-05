@@ -1,11 +1,11 @@
 import React from 'react';
 
 import YouTube from 'react-youtube';
-
+import Modal from './Modal';
 
 const styles ={
     white: {
-        maxWidth: '720px', position:'absolute',
+        maxWidth: '720px', position:'absolute', 
     },
     disc: {
         maxWidth: '200px', position: 'relative', left: '260px', top: '50px',
@@ -18,11 +18,27 @@ const styles ={
         width: 0,
         overflow: 'hidden',
     },
+    modaltemp:{
+        height:'50px',
+        width:'120px',
+        position:'relative',
+        left: '295px', top: '150px',
+    }
 };
 
 
 export default class Play extends React.Component {
+    constructor(props) {
+        super(props);
     
+        this.state = { isOpen: false };
+    }
+    
+    toggleModal = () => {
+        this.setState({
+          isOpen: !this.state.isOpen
+        });
+    }
     render() {
         return (
             <div>
@@ -42,8 +58,18 @@ export default class Play extends React.Component {
                         }}
                     />
                 </div>
-                <img src="/images/enter.png" style={styles.enter} />  
+     <div style={styles.modaltemp}>
+     <button onClick={this.toggleModal}>
+          <img src="/images/enter.png" /> 
+        </button>
+
+        <Modal show={this.state.isOpen}
+          onClose={this.toggleModal}>
+          Here's some content for the modal
+        </Modal>
+    </div>
             </div>
+            
         );
 
     }
