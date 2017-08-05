@@ -1,33 +1,27 @@
-import React, { Component, PropTypes } from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';
 import { BrowserRouter ,Route } from 'react-router-dom';
-import { Meteor } from 'meteor/meteor';
-import { createContainer } from 'meteor/react-meteor-data';
 
-import { Tasks } from '../api/tasks.js';
- 
 import Home from './pages/Home';
 import Play from './pages/Play';
 import Ranking from './pages/Ranking';
 import Modal from './pages/Modal';
-
-import Task from './Task.jsx';
-import AccountsUIWrapper from './AccountsUIWrapper.jsx';
+import AccountsUIWrapper from './AccountsUIWrapper';
 
 const styles = {
     container: {
         maxWidth: '720px', margin: 'auto', paddingTop: '36px',
     }
 }
+
  
 // App component - represents the whole app
-class App extends Component {
+export default class App extends React.Component {
     constructor(props) {
-    super(props);
-     this.state = {
-       hideCompleted: false,
-    };
-  }
+        super(props);
+         this.state = {
+           hideCompleted: false,
+        };
+    }
     
     
     handleSubmit(event) {
@@ -83,19 +77,3 @@ class App extends Component {
     );
   }
 }
-
-
-App.propTypes = {
-  tasks: PropTypes.array.isRequired,
-  incompleteCount: PropTypes.number.isRequired,
-  currentUser: PropTypes.object,
-};
- 
-export default createContainer(() => {
-    Meteor.subscribe('tasks');
-  return {
-    tasks: Tasks.find({}, { sort: { createdAt: -1 } }).fetch(),
-    incompleteCount: Tasks.find({ checked: { $ne: true } }).count(),
-    currentUser: Meteor.user(),
-  };
-}, App);

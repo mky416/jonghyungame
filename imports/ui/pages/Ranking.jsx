@@ -1,23 +1,17 @@
 import React from 'react';
 
 const styles ={
-    ranking:{
-        width: '700px',
-        borderRadius: '5px',
-        padding: '10px',
-        marginTop: '5px',
-        backgroundColor: 'white',
-    },
+    name: {
+        width:'720px',
+    }
 }
 
 export default class Ranking extends React.Component {
     render() {
         return (
-        <div>
-            <p style={styles.ranking}>내 점수</p>
-            <p style={styles.ranking}>1등</p>
-            <p style={styles.ranking}>2등</p>
-        </div>
+            <div>
+                <img src="/images/name.png" style={styles.name}/>
+            </div>
         );
 
     }
