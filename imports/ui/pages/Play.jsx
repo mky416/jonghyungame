@@ -2,7 +2,7 @@ import React from 'react';
 import YouTube from 'react-youtube';
 
 import { Link } from 'react-router-dom';
-import { feixData } from '../../api/songs.fixture.js';
+import { fixData } from '../../api/songs.fixture.js';
 import Modal from './Modal';
 
 const styles ={
@@ -77,7 +77,7 @@ export default class Play extends React.Component {
     
                 <Modal show={this.state.isOpen}
                   onClose={this.toggleModal}>
-                  Here's some content for the modal
+                  Here is some content for the modal
                 </Modal>
 
                 </div>

@@ -1,4 +1,6 @@
 /* CSS declarations go here */
+*{color: gray;}
+
 body {
   font-family: sans-serif;
   background-color: #315481;

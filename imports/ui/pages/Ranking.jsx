@@ -2,7 +2,10 @@ import React from 'react';
 
 const styles ={
     name: {
-        width:'720px',
+        width:'700px',
+        padding:'10px',
+        background: 'white',
+        borderRadius: '10px'
     }
 }
 
@@ -10,7 +13,10 @@ export default class Ranking extends React.Component {
     render() {
         return (
             <div>
-                <img src="/images/name.png" style={styles.name}/>
+                <p style={styles.name}>내 점수</p>
+                <p style={styles.name}>1등</p>
+                <p style={styles.name}>2등</p>
+                <p style={styles.name}>3등</p>
             </div>
         );
 
