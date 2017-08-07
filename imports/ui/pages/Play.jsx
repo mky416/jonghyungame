@@ -2,7 +2,7 @@ import React from 'react';
 import YouTube from 'react-youtube';
 
 import { Link } from 'react-router-dom';
-import { fixData } from '../../api/songs.fixture.js';
+import { feixData } from '../../api/songs.fixture.js';
 import Modal from './Modal';
 
 const styles ={
