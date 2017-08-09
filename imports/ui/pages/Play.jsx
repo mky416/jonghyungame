@@ -7,7 +7,7 @@ import Modal from './Modal';
 
 const styles ={
     white: {
-        maxWidth: '720px', position:'absolute', 
+        maxWidth: '750px', position:'absolute', zIndex: '-1'
     },
     disc: {
         maxWidth: '200px', position: 'relative', left: '260px', top: '50px',
@@ -25,6 +25,9 @@ const styles ={
         width:'120px',
         position:'relative',
         left: '295px', top: '150px',
+    },
+    answerInput:{
+        position:'relative', left: '200px', top: '80px', zIndex:'3', maxLength:"2"
     }
 };
 
@@ -54,7 +57,7 @@ export default class Play extends React.Component {
             <div>
                 <img src="/images/play22.png" style={styles.white} />
 
-                <a  onClick={this.myFunction}>
+                <a onClick={this.myFunction}>
                 
                     <img src="/images/compact-disc.png" style={styles.disc} />
                     <div style={styles.youtubeHidingContainer}>
@@ -73,14 +76,19 @@ export default class Play extends React.Component {
                         />
                     </div>
                 </a>
-
+                <div>
+                    <input 
+                        style={styles.answerInput}
+                        maxLength={1}    
+                    ></input>
+                </div>
 
                <div style={styles.modaltemp}>
                   <img onClick={this.toggleModal} src="/images/enter.png" /> 
     
                 <Modal show={this.state.isOpen}
                   onClose={this.toggleModal}>
-                  정답입니다!
+                  Here is some content for the modal
                 </Modal>
 
                 </div>

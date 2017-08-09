@@ -23,6 +23,8 @@ const styles = {
       <div style={styles.backdrop}>
         <div style={styles.modal} >
           {this.props.children}
+          <br />
+          <br />
           <div>
             <button onClick={this.props.onClose}>
               닫기

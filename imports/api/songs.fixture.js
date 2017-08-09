@@ -392,7 +392,27 @@ const data = load(`
   genre: '랩/힙합'
   release: '2016'
   time: '0:56'
-  number: '1'
+  
+- songId: 'EVaV7AwqBWg'
+  title: '에너제틱'
+  artist: '워너원'
+  genre: '댄스'
+  release: '2017'
+  time: '0:28'
+  
+- songId: 
+  title: 
+  artist: 
+  genre: 
+  release: '2017'
+  time:
+  
+- songId: 
+  title: 
+  artist: 
+  genre: 
+  release: '2017'
+  time: 
 `);
 
 
