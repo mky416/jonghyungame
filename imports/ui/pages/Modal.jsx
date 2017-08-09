@@ -4,38 +4,26 @@ import PropTypes from 'prop-types';
 
 export default class Modal extends React.Component {
   render() {
-    // Render nothing if the "show" prop is false
     if(!this.props.show) {
       return null;
     }
 
-    // The gray background
-    const backdropStyle = {
-      position: 'fixed',
-      top: 0,
-      bottom: 0,
-      left: 0,
-      right: 0,
-      backgroundColor: 'rgba(0,0,0,0.3)',
-      padding: 50
-    };
+const styles = {
+    backdrop: {
+      position: 'fixed', top: '0', bottom: '0', left: '0', right: '0', backgroundColor: 'rgba(0,0,0,0.3)', padding: '50px'
+    },
+    modal: {
+      backgroundColor: '#fff', borderRadius: '5px', maxWidth: '500px', minHeight: '300px', padding: '30px', margin: 'auto',
+      textAlign:'center', fontSize: '60px'
+    }
+};
 
-    // The modal "window"
-    const modalStyle = {
-      backgroundColor: '#fff',
-      borderRadius: 5,
-      maxWidth: 500,
-      minHeight: 300,
-      margin: '0 auto',
-      padding: 30
-    };
 
     return (
-      <div className="backdrop" >
-        <div className="modal" >
+      <div style={styles.backdrop}>
+        <div style={styles.modal} >
           {this.props.children}
-
-          <div className="footer">
+          <div>
             <button onClick={this.props.onClose}>
               닫기
             </button>

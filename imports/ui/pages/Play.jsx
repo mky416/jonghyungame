@@ -80,7 +80,7 @@ export default class Play extends React.Component {
     
                 <Modal show={this.state.isOpen}
                   onClose={this.toggleModal}>
-                  Here is some content for the modal
+                  정답입니다!
                 </Modal>
 
                 </div>
