@@ -297,7 +297,7 @@ const data = load(`
   
 - songId: '9pdj4iJD08s'
   title: '불장난'
-  artist: 'BLACKPINK'
+  artist: '블랙핑크'
   genre: '댄스'
   release: '2016'
   time: '0:21'
@@ -332,7 +332,7 @@ const data = load(`
   
 - songId: 'Nkbz1te_lqI'
   title: 'OUTSIDE'
-  artist: 'Crush'
+  artist: 'CRUSH'
   genre: '알앤비/어반'
   release: '2017'
   time: '0:41'
@@ -399,20 +399,161 @@ const data = load(`
   genre: '댄스'
   release: '2017'
   time: '0:28'
-  
-- songId: 
-  title: 
-  artist: 
-  genre: 
+
+- songId: '0VKcLPdY9lI'
+  title: '시간을 달려서'
+  artist: '여자친구'
+  genre: '댄스'
+  release: '2016'
+  time: '0:31'
+
+- songId: 'J0h8-OTC38I'
+  title: 'ROOKIE'
+  artist: '레드벨벳'
+  genre: '댄스'
   release: '2017'
-  time:
-  
-- songId: 
-  title: 
-  artist: 
-  genre: 
+  time: '0:16'
+
+- songId: 'glXgSSOKlls'
+  title: 'ICE CREAM CAKE'
+  artist: '레드벨벳'
+  genre: '댄스'
+  release: '2015'
+  time: '0:08'
+
+- songId: 'XGdbaEDVWp0'
+  title: 'DUMB DUMB'
+  artist: '레드벨벳'
+  genre: '댄스'
+  release: '2015'
+  time: '0:00'
+
+- songId: 'XGdbaEDVWp0'
+  title: 'DUMB DUMB'
+  artist: '레드벨벳'
+  genre: '댄스'
+  release: '2015'
+  time: '0:00'
+
+- songId: 'wEQpfil0IYA'
+  title: '오랜 날 오랜 밤'
+  artist: '악동뮤지션'
+  genre: '발라드'
   release: '2017'
-  time: 
+  time: '0:17'
+
+- songId: 'BiorIyrjTHc'
+  title: 'PICK ME'
+  artist: 'PRODUCE 101'
+  genre: '일렉트로니카'
+  release: '2015'
+  time: '0:46'
+
+- songId: 'iIPH8LFYFRk'
+  title: '에라 모르겠다'
+  artist: '빅뱅'
+  genre: '일렉트로니카'
+  release: '2016'
+  time: '0:23'
+
+- songId: '5JbVVlqrreE'
+  title: '나비잠'
+  artist: '김희철X민경훈'
+  genre: '락'
+  release: '2016'
+  time: '0:19'
+
+- songId: 'L-2M_-QLs8k'
+  title: '내가 저지른 사랑'
+  artist: '임창정'
+  genre: '발라드'
+  release: '2016'
+  time: '0:11'
+
+- songId: 'EjHAgoN2KtU'
+  title: '너였다면'
+  artist: '정승환'
+  genre: '발라드'
+  release: '2016'
+  time: '0:08'
+
+- songId: 'dISNgvVpWlo'
+  title: '휘파람'
+  artist: '블랙핑크'
+  genre: '랩/힙합'
+  release: '2016'
+  time: '0:22'
+
+- songId: 'WbhK3wMXluE'
+  title: 'BYE BYE MY BLUE'
+  artist: '백예린'
+  genre: '알앤비/소울'
+  release: '2016'
+  time: '0:22'
+
+- songId: 'cQuqs2LrXbo'
+  title: '우주를 건너'
+  artist: '백예린'
+  genre: '알앤비/소울'
+  release: '2015'
+  time: '0:09'
+
+- songId: 'r6TRytnpaYs'
+  title: '아주 오래된 기억'
+  artist: '백예린'
+  genre: '드라마'
+  release: '2017'
+  time: '0:09'
+
+- songId: 'x815A21RIto'
+  title: '이럴거면 그러지말지'
+  artist: '백아연'
+  genre: '발라드'
+  release: '2015'
+  time: '0:01'
+
+- songId: 'BbQG-S4mU0U'
+  title: '쏘쏘'
+  artist: '백아연'
+  genre: '발라드'
+  release: '2016'
+  time: '0:04'
+
+- songId: 'TghSCDClIYU'
+  title: '그냥 한 번'
+  artist: '백아연'
+  genre: '발라드'
+  release: '2016'
+  time: '0:00'
+
+- songId: 'rUbq_IXBaYg'
+  title: '광화문에서'
+  artist: '규현'
+  genre: '발라드'
+  release: '2014'
+  time: '0:15'
+
+- songId: 'pLuETPoCKRo'
+  title: '어쩌면 나'
+  artist: '로이킴'
+  genre: '드라마'
+  release: '2016'
+  time: '0:25'
+
+- songId: 'pLuETPoCKRo'
+  title: '어쩌면 나'
+  artist: '로이킴'
+  genre: '드라마'
+  release: '2016'
+  time: '0:25'
+
+- songId: 'eHir_vB1RUI'
+  title: 'RAIN'
+  artist: '태연'
+  genre: '발라드'
+  release: '2016'
+  time: '0:13'
+
 `);
 
 
