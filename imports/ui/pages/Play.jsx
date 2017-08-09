@@ -37,6 +37,10 @@ export default class Play extends React.Component {
     myFunction = () => {
         console.log("CLICKED");
         this.setState({play:1});
+        const internalPlayer = this.youtube.internalPlayer
+        
+        internalPlayer.seekTo(30)
+        .then(() => internalPlayer.playVideo())
     };
 
     toggleModal = () => {
@@ -50,11 +54,12 @@ export default class Play extends React.Component {
             <div>
                 <img src="/images/play22.png" style={styles.white} />
 
-                <a href="" onClick={this.myFunction}>
+                <a  onClick={this.myFunction}>
                 
                     <img src="/images/compact-disc.png" style={styles.disc} />
                     <div style={styles.youtubeHidingContainer}>
-                        <YouTube 
+                        <YouTube
+                            ref={component => this.youtube = component}
                             videoId={'afxLaQiLu-o'}
                             onReady={({target}) => {
                                 const internalPlayer = target;
@@ -62,7 +67,7 @@ export default class Play extends React.Component {
                             }}
                             onStateChange={({target, data}) => {
                                 if (data === 1) { // Play Event
-                                    setTimeout(() => target.stopVideo(), 1000);
+                                    setTimeout(() => target.pauseVideo(), 1000);
                                 }
                             }}
                         />
@@ -71,9 +76,7 @@ export default class Play extends React.Component {
 
 
                <div style={styles.modaltemp}>
-                 <button onClick={this.toggleModal}>
-                  <img src="/images/enter.png" /> 
-                </button>
+                  <img onClick={this.toggleModal} src="/images/enter.png" /> 
     
                 <Modal show={this.state.isOpen}
                   onClose={this.toggleModal}>

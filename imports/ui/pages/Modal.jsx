@@ -37,7 +37,7 @@ export default class Modal extends React.Component {
 
           <div className="footer">
             <button onClick={this.props.onClose}>
-              Close
+              닫기
             </button>
           </div>
         </div>
@@ -51,4 +51,3 @@ Modal.propTypes = {
   show: PropTypes.bool,
   children: PropTypes.node
 };
-
